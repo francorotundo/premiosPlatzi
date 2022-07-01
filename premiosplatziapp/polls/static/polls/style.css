@@ -1,15 +1,68 @@
-/* body {
-    background-image: url("./giphy.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column  ;
 
-li {
-    list-style: none;
+    height: 100vh;
+    background: hsl(204, 100%, 5%);
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-li a {
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 50px 50px;
+    height: 60px;
+    font-size: 72px;
+    color: #71632d;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header, ul {
+    background: linear-gradient(
+        to right,
+        hsl(98 100% 62%),
+        hsl(204 100% 59%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+
+    border: 1px solid white;
+    padding: 50px;
+    margin-bottom: 20px;
+
+    font-size: 28px;
+}
+
+a {
+    color: white;
     text-decoration: none;
-    color: green;
-    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100vw;
+    padding: 50px
 }
